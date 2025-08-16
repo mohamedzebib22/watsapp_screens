@@ -1,4 +1,5 @@
 import 'package:chat_app/core/models/theme_data.dart';
+import 'package:chat_app/feature/chatpage/presentation/view/chatpage_view.dart';
 import 'package:chat_app/feature/homepage/presentation/view/chat_page.dart';
 import 'package:chat_app/feature/homepage/presentation/view/home_page.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,7 @@ class ChatApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
       title: 'Chat App',
-      home: const HomePage(),
+      home: const ChatPageView(),
     );
   }
 }

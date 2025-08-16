@@ -29,6 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   mvvm_generator: ^1.0.3
+  flutter_chat_bubble: ^2.0.2
   flutter:
     sdk: flutter
 
