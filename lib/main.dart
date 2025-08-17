@@ -19,7 +19,7 @@ class ChatApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
       title: 'Chat App',
-      home: const ChatPageView(),
+      home: const HomePage(),
     );
   }
 }

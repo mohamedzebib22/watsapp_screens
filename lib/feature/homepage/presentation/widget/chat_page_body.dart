@@ -49,11 +49,7 @@ key: ValueKey(isDark),
 
       child: Column(
         children: [
-          buildCustomAppBar(width,
-              isDark ? StyleText.defualtTextWhite : StyleText.defualtTextBlack ,
-              isDark ? Colors.white : Colors.black
-              ),
-          SizedBox(height: height * 0.02),
+         
           CustomTextFeild(
             hintColor: isDark ? Colors.white : Colors.black,
             hintText: Constant.metaAi,
@@ -83,14 +79,4 @@ Expanded buildListOfPerson(List<PersonInfoModel> personInfo) {
   );
 }
 
-Row buildCustomAppBar(double width , TextStyle textStyle,Color iconColor) {
-  return Row(
-    children: [
-      Icon(Icons.more_vert_outlined, color:iconColor),
-      SizedBox(width: width * 0.02),
-      Icon(Icons.photo_camera_outlined, color: iconColor),
-      Spacer(),
-      Text(Constant.title, style: textStyle),
-    ],
-  );
-}
+

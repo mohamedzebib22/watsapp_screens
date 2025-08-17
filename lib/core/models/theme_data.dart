@@ -5,22 +5,15 @@ class AppTheme {
   static final ThemeData ligtTheme = ThemeData(
     brightness: Brightness.light,
    
-
-    floatingActionButtonTheme: FloatingActionButtonThemeData(
-      backgroundColor: Colors.blue,
-
-    ),
+    scaffoldBackgroundColor: Colors.transparent,
+    
   );
 
   static final ThemeData darkTheme = ThemeData(
     brightness: Brightness.dark,
   
-   
+   scaffoldBackgroundColor: Colors.transparent,
     
-     floatingActionButtonTheme: FloatingActionButtonThemeData(
-      
-      backgroundColor:Color(0xff101127),
-      
-    )
+     
   );
 }

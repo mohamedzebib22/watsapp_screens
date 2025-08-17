@@ -29,19 +29,7 @@ class ChatPageView extends StatelessWidget {
             ),
           ),
         ),
-        body: Container(
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage(
-                isDark
-                    ? 'assets/image/darkbackground.jpg'
-                    : 'assets/image/lightbackground.png',
-              ),
-              fit: BoxFit.fill,
-            ),
-          ),
-          child: const ChatPageWidgetBody(),
-        ),
+        body: const ChatPageWidgetBody(),
       ),
     );
   }

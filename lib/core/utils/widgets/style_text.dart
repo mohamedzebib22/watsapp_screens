@@ -32,4 +32,14 @@ class StyleText {
     fontWeight: FontWeight.w600,
     color: Colors.black,
   );
+  static const TextStyle newStory12White = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w600,
+    color: Colors.grey,
+  );
+  static const TextStyle newStory12Black = TextStyle(
+    fontSize: 12,
+    fontWeight: FontWeight.w600,
+    color: Colors.black,
+  );
 }

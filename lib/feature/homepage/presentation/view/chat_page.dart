@@ -7,10 +7,8 @@ class ChatPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea( 
-      child: Scaffold(    
-        body:const ChatPageBody(),
-      ),
+    return Scaffold(    
+      body:const ChatPageBody(),
     );
   }
 
