@@ -43,4 +43,11 @@ class _ShowStoriesBodyState extends State<ShowStoriesBody> {
       },
     );
   }
+
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
+    
+  }
 }

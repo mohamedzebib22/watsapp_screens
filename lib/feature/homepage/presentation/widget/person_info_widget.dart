@@ -1,5 +1,7 @@
 import 'package:chat_app/core/utils/widgets/style_text.dart';
+import 'package:chat_app/feature/chatpage/presentation/view/chatpage_view.dart';
 import 'package:chat_app/feature/homepage/data/model/prson_info.dart';
+import 'package:chat_app/feature/homepage/presentation/view/chat_page.dart';
 import 'package:flutter/material.dart';
 
 class PersonInfoWidget extends StatelessWidget {
@@ -11,15 +13,24 @@ class PersonInfoWidget extends StatelessWidget {
     return Directionality(
       textDirection:TextDirection.rtl,
       child: ListTile(
-        title:Text(personInfo.name, style: 
-        isDark 
-          ? StyleText.personNameWhite 
-          : StyleText.personNameBlack),
+        onTap: (){
+          Navigator.pushNamed(context, ChatPageView.id ,arguments: personInfo);
+        },
+        title:Hero(
+          tag: personInfo.name,
+          child: Text(personInfo.name, style: 
+          isDark 
+            ? StyleText.personNameWhite 
+            : StyleText.personNameBlack),
+        ),
     
         subtitle: Text(personInfo.desc, style: isDark ? StyleText.personDescWhite : StyleText.personDescBlack),
-        leading: CircleAvatar(
-          radius: 30,
-          backgroundImage: AssetImage(personInfo.image),
+        leading: Hero(
+          tag: personInfo.image,
+          child: CircleAvatar(
+            radius: 30,
+            backgroundImage: AssetImage(personInfo.image),
+          ),
         ),
         trailing: CircleAvatar(
           radius: 10,
